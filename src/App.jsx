@@ -40,7 +40,10 @@ function MainCard({ select, onSelect }) {
           </p>
         </div>
       </div>
-      <ul className="p-[18px] flex justify-around text-neutral-desaturatedblue text-[15px] desktop:flex-col desktop:gap-4 desktop:py-[30px]">
+      <ul
+        role="list"
+        className="p-[18px] flex justify-around text-neutral-desaturatedblue text-[15px] desktop:flex-col desktop:gap-4 desktop:py-[30px]"
+      >
         <li
           onClick={() => onSelect("daily")}
           className={`cursor-pointer duration-300 hover:text-white ${select === "daily" ? "text-white" : ""}`}
