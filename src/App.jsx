@@ -27,22 +27,22 @@ function Cards({ select, onSelect }) {
 
 function MainCard({ select, onSelect }) {
   return (
-    <div className="bg-neutral-darkblue rounded-[12px] flex flex-col desktop:row-span-2 max-w-[300px]">
-      <div className="p-[25px] flex gap-4 justify-center items-center bg-[#5747EA]/[0.85] overflow-hidden rounded-[12px] font-light desktop:flex-col desktop:items-start desktop:py-[40px] desktop:pb-[80px] desktop:gap-8 desktop:max-w-[250px]">
+    <div className="flex max-w-[300px] flex-col rounded-[12px] bg-neutral-darkblue desktop:row-span-2">
+      <div className="flex items-center justify-center gap-4 overflow-hidden rounded-[12px] bg-[#5747EA]/[0.85] p-[25px] font-light desktop:max-w-[250px] desktop:flex-col desktop:items-start desktop:gap-8 desktop:py-[40px] desktop:pb-[80px]">
         <img
           src="/images/image-jeremy.png"
-          className="border-2 rounded-full border-white w-[65px] h-[65px]"
+          className="h-[65px] w-[65px] rounded-full border-2 border-white"
         ></img>
         <div className="flex flex-col gap-1 desktop:gap-0">
           <p className="text-[13px] text-white/[0.7]">Report for</p>
-          <p className="text-white text-[24px] desktop:text-[40px] desktop:leading-10">
+          <p className="text-[24px] text-white desktop:text-[40px] desktop:leading-10">
             Jeremy Robson
           </p>
         </div>
       </div>
       <ul
         role="list"
-        className="p-[18px] flex justify-around text-neutral-desaturatedblue text-[15px] desktop:flex-col desktop:gap-4 desktop:py-[30px]"
+        className="flex justify-around p-[18px] text-[15px] text-neutral-desaturatedblue desktop:flex-col desktop:gap-4 desktop:py-[30px]"
       >
         <li
           onClick={() => onSelect("daily")}
@@ -118,25 +118,25 @@ function Card({ select, el }) {
   return (
     <>
       <div
-        className={`${background} rounded-[15px] bg-no-repeat bg-[top_-0.4rem_right_0.6rem]`}
+        className={`${background} rounded-[15px] bg-[top_-0.4rem_right_0.6rem] bg-no-repeat`}
         style={{ backgroundImage: `url('/images/icon-${title}.svg')` }}
       >
-        <div className="mt-[37px] p-[20px] flex flex-col gap-2 rounded-[12px] bg-neutral-darkblue desktop:mt-[52px] hover:bg-neutral-darkbluehover desktop:cursor-pointer">
-          <div className="flex justify-between items-center w-full">
+        <div className="mt-[37px] flex flex-col gap-2 rounded-[12px] bg-neutral-darkblue p-[20px] hover:bg-neutral-darkbluehover desktop:mt-[52px] desktop:cursor-pointer">
+          <div className="flex w-full items-center justify-between">
             <p className="text-white">{el.title}</p>
-            <div className="cursor-pointer group">
+            <div className="group cursor-pointer">
               <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
                   fill="#BBC0FF"
                   fillRule="evenodd"
-                  className="group-hover:duration-300 group-hover:fill-white"
+                  className="group-hover:fill-white group-hover:duration-300"
                 />
               </svg>
             </div>
           </div>
-          <div className="flex justify-between items-center desktop:flex-col desktop:items-start">
-            <p className="text-[32px] text-white font-light desktop:text-[56px]">
+          <div className="flex items-center justify-between desktop:flex-col desktop:items-start">
+            <p className="text-[32px] font-light text-white desktop:text-[56px]">
               {current}hrs
             </p>
             <p className="text-[12px] text-neutral-paleblue">
