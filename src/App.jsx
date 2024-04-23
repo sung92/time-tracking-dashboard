@@ -30,7 +30,7 @@ function MainCard({ select, onSelect }) {
     <div className="bg-neutral-darkblue rounded-[12px] flex flex-col desktop:row-span-2 max-w-[300px]">
       <div className="p-[25px] flex gap-4 justify-center items-center bg-[#5747EA]/[0.85] overflow-hidden rounded-[12px] font-light desktop:flex-col desktop:items-start desktop:py-[40px] desktop:pb-[80px] desktop:gap-8 desktop:max-w-[250px]">
         <img
-          src="./images/image-jeremy.png"
+          src="/images/image-jeremy.png"
           className="border-2 rounded-full border-white w-[65px] h-[65px]"
         ></img>
         <div className="flex flex-col gap-1 desktop:gap-0">
